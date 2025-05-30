@@ -1,4 +1,16 @@
 /*primary color*/
+.bg-primary {
+    background-color: #FEF3E2;
+}
+
+.bg-navbar {
+    background-color: #FDFDFD;
+}
+
+.bg-main {
+    background-color: #FCCF5C;
+}
+
 .bg-cream {
     background-color: #FFF2E1;
 }
@@ -11,31 +23,57 @@ body {
 .bg-yellow-500 {
     background-color: #F48C06;
 }
-.text-yellow-500 {
-    color: #F48C06;
+
+.text-primary {
+    color: #4A4A4A;
 }
-.floating { 
-    animation-name: floating; 
-    animation-duration: 3s; 
-    animation-iteration-count: infinite; 
-    animation-timing-function: ease-in-out;
-} 
-@keyframes floating { 
-    0% { transform: translate(0, 0px); } 
-    50% { transform: translate(0, 8px); } 
-    100% { transform: translate(0, -0px); }  
-} 
-.floating-4 { 
-    animation-name: floating; 
-    animation-duration: 4s; 
-    animation-iteration-count: infinite; 
-    animation-timing-function: ease-in-out;
-} 
-@keyframes floating-4 { 
-    0% { transform: translate(0, 0px); } 
-    50% { transform: translate(0, 8px); } 
-    100% { transform: translate(0, -0px); }  
+
+.text-secondary {
+    color: #FDFDFD;
 }
-.text-darken {
-    color: #2F327D;
+
+.text-main {
+    color: #FCCF5C;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 8px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+.floating-4 {
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating-4 {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 8px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
 }

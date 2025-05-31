@@ -23,7 +23,7 @@
 		href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
 </head>
 
-<body class="antialiased scroll-smooth w-screen bg-primary">
+<body class="antialiased scroll-smooth w-screen overflow-x-hidden bg-primary">
 	<!-- Sticky Navbar -->
 	<div x-data="{ navbar: '' }" x-init="
 		fetch('components/navbar.html')
@@ -35,12 +35,17 @@
 		<div x-html="navbar"></div>
 	</div>
 
+	<!-- Ilustrasi -->
+	<div class="absolute w-48 h-48 -top-8 -right-8">
+		<img src="assets/icon/sun.svg" alt="" class="w-full h-full object-contain">
+	</div>
+
 	<!-- Section Beranda -->
 	<section id="Beranda" class="flex flex-row h-screen items-start justify-start px-24 pt-40 relative overflow-hidden">
 		<!-- Left Col -->
 		<div class="w-1/2 text-left">
 			<h1 data-aos="fade-right" data-aos-once="true" class="text-7xl font-bold leading-tight">
-				<span class="text-putih">Struk</span>
+				<span class="text-primary">Struk</span>
 				<span class="text-main">.in</span>
 			</h1>
 			<h1 data-aos="fade-right" data-aos-once="true"
@@ -86,6 +91,11 @@
 			</svg>
 		</div>
 	</section>
+	
+	<!-- Ilustrasi -->
+	<div class="absolute w-48 h-48 -bottom-36 left-18 z-20">
+		<img src="assets/icon/coin.svg" alt="" class="w-full h-full object-contain">
+	</div>
 
 	<!-- Section Fitur Andalan -->
 	<section id="FiturAndalan"
@@ -118,7 +128,6 @@
 			</svg>
 		</div>
 		<!-- Ilustrasi -->
-
 		<div class="absolute w-48 h-48 top-20 left-24">
 			<img src="assets/icon/megaphone.svg" alt="megaphone" class="w-full h-full object-contain">
 		</div>
@@ -128,6 +137,10 @@
 		<!-- Deskripsi -->
 		<p class="text-base text-center text-secondary leading-normal">Tiga langkah mudah untuk mengelola struk<br>dan
 			membagi tagihan dengan teman.</p>
+		<!-- Nata -->
+		<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true" class="absolute top-36 right-10 floating-4">
+			<img class="bg-opacity-30 rounded-lg h-20 sm:h-16" src="assets/image/cardnata.svg" alt="Card redian">
+		</div>
 		<!-- Cara Kerja -->
 		<div class="flex flex-row py-24 gap-x-8">
 			<!-- Card 1 -->
@@ -168,29 +181,31 @@
 	</section>
 
 	<!-- Section Yang Sering Ditanyain -->
-	<section id="YangSeringDitanyain" class="flex flex-col h-screen px-24 pt-24 items-center justify-start bg-primary relative">
+	<section id="YangSeringDitanyain"
+		class="flex flex-col h-screen px-24 pt-24 items-center justify-start bg-primary relative">
 		<!-- Judul -->
-		<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true"
-			class="absolute top-24 right-24 floating-4">
+		<h1 class="text-4xl font-semibold text-primary leading-tight pb-2">Yang Sering Ditanyain</h1>
+		<!-- Fikri -->
+		<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true" class="absolute top-24 right-24 floating-4">
 			<img class="bg-opacity-30 rounded-lg h-20 w-auto sm:h-20" src="assets/image/cardfikri.svg" alt="Card fikri">
 		</div>
+		<!-- Redian -->
 		<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true"
 			class="absolute bottom-20 right-10 floating-4">
 			<img class="bg-opacity-30 rounded-lg h-32  sm:h-32" src="assets/image/cardredian.svg" alt="Card redian">
 		</div>
-		<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true"
-			class="absolute top-24 left-24 floating-4">
-			<img class="bg-opacity-30 rounded-lg h-32 w-auto sm:h-32" src="assets/image/cardalfian.svg" alt="Card alfian">
+		<!-- Alfian -->
+		<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true" class="absolute top-24 left-24 floating-4">
+			<img class="bg-opacity-30 rounded-lg h-32 w-auto sm:h-32" src="assets/image/cardalfian.svg"
+				alt="Card alfian">
 		</div>
-		<h1 class="text-4xl font-semibold text-primary leading-tight pb-2">Yang Sering Ditanyain</h1>
-				<div class="absolute w-40 h-40 bottom-20 left-24">
+		<!-- Ilustrasi -->
+		<div class="absolute w-40 h-40 bottom-20 left-24">
 			<img src="assets/icon/comment.svg" alt="comment" class="w-full h-full object-contain">
 		</div>
 		<!-- Deskripsi -->
 		<p class="text-base text-center text-secondary leading-normal pb-12">FAQ ini siap menjawab segala rasa
-			penasaranmu
-			tentang
-			fitur<br>dan cara pakai aplikasi Struk.in.</p>
+			penasaranmu tentang fitur<br>dan cara pakai aplikasi Struk.in.</p>
 		<!-- FAQ -->
 		<div class="w-2/3" x-data="{ faq: '' }" x-init="
 		fetch('components/faq.html')
@@ -204,23 +219,24 @@
 	</section>
 
 	<!-- Section Tim Kami -->
-	<section id="TimKami" class="relative flex flex-col min-h-screen px-24 pt-24 items-center justify-start bg-secondary">
-		<div class="absolute w-40 h-40  bottom-10 left-10">
+	<section id="TimKami"
+		class="relative flex flex-col min-h-screen px-24 pt-24 items-center justify-start bg-secondary">
+		<div class="absolute w-48 h-48 bottom-28 left-10">
 			<img src="assets/icon/stick.svg" alt="stick icon" class="w-full h-full object-contain">
 		</div>
-		<div class="absolute w-48 h-48  bottom-48 right-10">
+		<div class="absolute w-64 h-64 bottom-12 right-0">
 			<img src="assets/icon/headphone.svg" alt="headphone" class="w-full h-full object-contain">
 		</div>
 		<!-- Judul -->
 		<h1 class="text-4xl font-semibold text-primary leading-tight pb-2">Tim Kami</h1>
 
 		<!-- Komponen Team -->
-		<div class="w-full mt-8" x-data="{ team: '' }" x-init="
+		<div class="w-full" x-data="{ team: '' }" x-init="
 		fetch('components/tim-kami.html')
 		.then(res => res.text())
 		.then(html => team = html)">
-		<div x-html="team"></div>
- 	 </div>
+			<div x-html="team"></div>
+		</div>
 	</section>
 
 

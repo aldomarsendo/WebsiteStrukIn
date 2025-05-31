@@ -16,6 +16,14 @@
     opacity: 70%;
 }
 
+.bg-bubble {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+
 .glass-navbar {
     background: rgba(255, 255, 255, 0.2);
     /* semi transparan */

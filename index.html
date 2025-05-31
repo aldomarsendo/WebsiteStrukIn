@@ -107,6 +107,7 @@
 		</div>
 	</section>
 
+	<!-- Section Cara Kerja -->
 	<section id="CaraKerja" class="flex flex-col h-screen px-24 pt-24 items-center justify-start bg-primary relative">
 		<!-- Background Putih Melengkung untuk transisi ke section selanjutnya -->
 		<div class="absolute top-0 left-0 w-full z-10 transform rotate-180">
@@ -116,6 +117,12 @@
 					fill="#FDFDFD"></path>
 			</svg>
 		</div>
+		<!-- Ilustrasi -->
+
+		<div class="absolute w-48 h-48 top-20 left-24">
+			<img src="assets/icon/megaphone.svg" alt="megaphone" class="w-full h-full object-contain">
+		</div>
+
 		<!-- Judul -->
 		<h1 class="text-4xl font-semibold text-primary leading-tight pb-2">Bagaimana Struk.in Bekerja</h1>
 		<!-- Deskripsi -->
@@ -161,9 +168,24 @@
 	</section>
 
 	<!-- Section Yang Sering Ditanyain -->
-	<section id="YangSeringDitanyain" class="flex flex-col h-screen px-24 pt-24 items-center justify-start bg-primary">
+	<section id="YangSeringDitanyain" class="flex flex-col h-screen px-24 pt-24 items-center justify-start bg-primary relative">
 		<!-- Judul -->
+		<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true"
+			class="absolute top-24 right-24 floating-4">
+			<img class="bg-opacity-30 rounded-lg h-20 w-auto sm:h-20" src="assets/image/cardfikri.svg" alt="Card fikri">
+		</div>
+		<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true"
+			class="absolute bottom-20 right-10 floating-4">
+			<img class="bg-opacity-30 rounded-lg h-32  sm:h-32" src="assets/image/cardredian.svg" alt="Card redian">
+		</div>
+		<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true"
+			class="absolute top-24 left-24 floating-4">
+			<img class="bg-opacity-30 rounded-lg h-32 w-auto sm:h-32" src="assets/image/cardalfian.svg" alt="Card alfian">
+		</div>
 		<h1 class="text-4xl font-semibold text-primary leading-tight pb-2">Yang Sering Ditanyain</h1>
+				<div class="absolute w-40 h-40 bottom-20 left-24">
+			<img src="assets/icon/comment.svg" alt="comment" class="w-full h-full object-contain">
+		</div>
 		<!-- Deskripsi -->
 		<p class="text-base text-center text-secondary leading-normal pb-12">FAQ ini siap menjawab segala rasa
 			penasaranmu
@@ -182,10 +204,25 @@
 	</section>
 
 	<!-- Section Tim Kami -->
-	<section id="TimKami" class="flex flex-col h-screen px-24 pt-24 items-center justify-start bg-primary">
+	<section id="TimKami" class="relative flex flex-col min-h-screen px-24 pt-24 items-center justify-start bg-secondary">
+		<div class="absolute w-40 h-40  bottom-10 left-10">
+			<img src="assets/icon/stick.svg" alt="stick icon" class="w-full h-full object-contain">
+		</div>
+		<div class="absolute w-48 h-48  bottom-48 right-10">
+			<img src="assets/icon/headphone.svg" alt="headphone" class="w-full h-full object-contain">
+		</div>
 		<!-- Judul -->
 		<h1 class="text-4xl font-semibold text-primary leading-tight pb-2">Tim Kami</h1>
+
+		<!-- Komponen Team -->
+		<div class="w-full mt-8" x-data="{ team: '' }" x-init="
+		fetch('components/tim-kami.html')
+		.then(res => res.text())
+		.then(html => team = html)">
+		<div x-html="team"></div>
+ 	 </div>
 	</section>
+
 
 	<!-- Footer -->
 	<footer class="bg-footer">

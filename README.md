@@ -1,7 +1,7 @@
 # Skilline Landing Page
 Free landing page template built on top of TailwindCSS
 
-> [LIVE DEMO](strukin.site) or (https://strukin-six.vercel.app/)
+> [LIVE DEMO](https://strukin.site/) or (https://strukin-six.vercel.app/)
 
 ## Built with:
 - Tailwind CSS ^2.0

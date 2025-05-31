@@ -1,0 +1,111 @@
+<div class="w-full mx-auto px-4 py-2 divide-y divide-gray-200 rounded-2xl bg-secondary" x-data="{ selected: null }">
+
+    <!-- Item 1 -->
+    <div class="py-2 space-y-3">
+        <button @click="selected !== 1 ? selected = 1 : selected = null"
+            class="flex w-full items-center justify-between text-left text-lg font-medium text-primary focus:outline-none">
+            <span>Apa itu Struk.in?</span>
+            <i :class="selected === 1 ? 'rotate-180' : ''"
+                class="ph-fill ph-caret-circle-down text-2xl text-primary transform transition-transform duration-300"></i>
+        </button>
+        <div x-show="selected === 1" x-transition class="text-sm text-secondary">
+            Struk.in adalah aplikasi yang bantu kamu memindai struk belanja, nyatet detail pembelian, dan otomatis bagi
+            tagihan ke teman-teman. Gak ribet, tinggal foto, beres!
+        </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="py-2 space-y-3">
+        <button @click="selected !== 2 ? selected = 2 : selected = null"
+            class="flex w-full items-center justify-between text-left text-lg font-medium text-primary focus:outline-none">
+            <span>Struk apa aja yang bisa dipindai Struk.in?</span>
+            <i :class="selected === 2 ? 'rotate-180' : ''"
+                class="ph-fill ph-caret-circle-down text-2xl text-primary transform transition-transform duration-300"></i>
+        </button>
+        <div x-show="selected === 2" x-transition class="text-sm text-secondary">
+            Struk.in bisa baca struk cetak maupun digital. Tapi biar hasilnya akurat, pastikan struknya jelas, gak
+            buram, dan gak kusut ya.
+        </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="py-2 space-y-3">
+        <button @click="selected !== 3 ? selected = 3 : selected = null"
+            class="flex w-full items-center justify-between text-left text-lg font-medium text-primary focus:outline-none">
+            <span>Harus login dulu gak sih?</span>
+            <i :class="selected === 3 ? 'rotate-180' : ''"
+                class="ph-fill ph-caret-circle-down text-2xl text-primary transform transition-transform duration-300"></i>
+        </button>
+        <div x-show="selected === 3" x-transition class="text-sm text-secondary">
+            Enggak kok! Kamu bisa langsung pakai Struk.in tanpa harus daftar atau login dulu.
+        </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="py-2 space-y-3">
+        <button @click="selected !== 4 ? selected = 4 : selected = null"
+            class="flex w-full items-center justify-between text-left text-lg font-medium text-primary focus:outline-none">
+            <span>Bisa dipakai offline gak?</span>
+            <i :class="selected === 4 ? 'rotate-180' : ''"
+                class="ph-fill ph-caret-circle-down text-2xl text-primary transform transition-transform duration-300"></i>
+        </button>
+        <div x-show="selected === 4" x-transition class="text-sm text-secondary">
+            Bisa buat lihat histori, tapi kalau mau scan struk, kamu perlu koneksi internet ya karena prosesnya lewat
+            server.
+        </div>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="py-2 space-y-3">
+        <button @click="selected !== 5 ? selected = 5 : selected = null"
+            class="flex w-full items-center justify-between text-left text-lg font-medium text-primary focus:outline-none">
+            <span>Sistem bagi tagihannya gimana?</span>
+            <i :class="selected === 5 ? 'rotate-180' : ''"
+                class="ph-fill ph-caret-circle-down text-2xl text-primary transform transition-transform duration-300"></i>
+        </button>
+        <div x-show="selected === 5" x-transition class="text-sm text-secondary">
+            Struk.in bagi tagihan berdasarkan item yang dipesan dan harganya. Jadi, tiap orang bayar sesuai yang dia
+            pesan, bukan dibagi rata.
+        </div>
+    </div>
+
+    <!-- Item 6 -->
+    <div class="py-2 space-y-3">
+        <button @click="selected !== 6 ? selected = 6 : selected = null"
+            class="flex w-full items-center justify-between text-left text-lg font-medium text-primary focus:outline-none">
+            <span>Bisa lihat histori struk sebelumnya?</span>
+            <i :class="selected === 6 ? 'rotate-180' : ''"
+                class="ph-fill ph-caret-circle-down text-2xl text-primary transform transition-transform duration-300"></i>
+        </button>
+        <div x-show="selected === 6" x-transition class="text-sm text-secondary">
+            Bisa dong! Struk yang udah kamu scan disimpan otomatis di histori, jadi bisa dicek kapan aja.
+        </div>
+    </div>
+
+    <!-- Item 7 -->
+    <div class="py-2 space-y-3">
+        <button @click="selected !== 7 ? selected = 7 : selected = null"
+            class="flex w-full items-center justify-between text-left text-lg font-medium text-primary focus:outline-none">
+            <span>Gimana kalau hasil scan-nya gak akurat?</span>
+            <i :class="selected === 7 ? 'rotate-180' : ''"
+                class="ph-fill ph-caret-circle-down text-2xl text-primary transform transition-transform duration-300"></i>
+        </button>
+        <div x-show="selected === 7" x-transition class="text-sm text-secondary">
+            Tenang aja, kamu bisa langsung edit nama item, harga, atau jumlahnya sebelum disimpan atau dibagi.
+        </div>
+    </div>
+
+    <!-- Item 8 -->
+    <div class="py-2 space-y-3">
+        <button @click="selected !== 8 ? selected = 8 : selected = null"
+            class="flex w-full items-center justify-between text-left text-lg font-medium text-primary focus:outline-none">
+            <span>Bisa kasih nama tiap transaksi?</span>
+            <i :class="selected === 8 ? 'rotate-180' : ''"
+                class="ph-fill ph-caret-circle-down text-2xl text-primary transform transition-transform duration-300"></i>
+        </button>
+        <div x-show="selected === 8" x-transition class="text-sm text-secondary">
+            Bisa banget! Kamu bisa kasih nama di setiap struk, biar gampang dicari lagi nanti.
+        </div>
+    </div>
+
+</div>

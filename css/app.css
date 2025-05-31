@@ -3,7 +3,7 @@
     background-color: #FEF3E2;
 }
 
-.bg-navbar {
+.bg-secondary {
     background-color: #FDFDFD;
 }
 
@@ -11,8 +11,20 @@
     background-color: #FCCF5C;
 }
 
-.bg-cream {
-    background-color: #FFF2E1;
+.bg-footer {
+    background-color: #D9D9D9;
+    opacity: 70%;
+}
+
+.glass-navbar {
+    background: rgba(255, 255, 255, 0.2);
+    /* semi transparan */
+    backdrop-filter: blur(16px);
+    /* efek blur */
+    -webkit-backdrop-filter: blur(16px);
+    /* support Safari */
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    /* garis kaca */
 }
 
 /*font*/
@@ -28,7 +40,15 @@ body {
     color: #4A4A4A;
 }
 
+.text-primary:hover {
+    color: #363636;
+}
+
 .text-secondary {
+    color: #8E8E8E;
+}
+
+.text-putih {
     color: #FDFDFD;
 }
 

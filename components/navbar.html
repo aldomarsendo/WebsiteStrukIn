@@ -1,6 +1,7 @@
 <div x-data="{ open: false }" class="fixed top-4 w-full flex justify-center z-50">
-    <nav :class="{ 'h-auto': open }" class="w-11/12 md:w-2/3 flex flex-col lg:flex-row items-center justify-between px-6 md:px-8 py-4 rounded-2xl shadow-xl bg-secondary transition-all duration-300 ease-in-out">
-        
+    <nav :class="{ 'h-auto': open }"
+        class="w-11/12 md:w-2/3 flex flex-col lg:flex-row items-center justify-between px-6 md:px-8 py-4 rounded-2xl shadow-xl bg-secondary transition-all duration-300 ease-in-out">
+
         <div class="w-full lg:w-auto flex flex-row items-center justify-between">
             <a href="#" class="flex flex-row items-center gap-x-2">
                 <img src="assets/icon/icon.svg" class="w-7 h-7" alt="Struk.In Logo">
@@ -11,37 +12,50 @@
                 <button @click="open = !open" class="text-primary focus:outline-none">
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
-                        <path :class="{ 'hidden': open, 'inline-block': !open }" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7"></path>
-                        <path :class="{ 'hidden': !open, 'inline-block': open }" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12"></path>
+                        <path :class="{ 'hidden': open, 'inline-block': !open }" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        <path :class="{ 'hidden': !open, 'inline-block': open }" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                     </svg>
                 </button>
             </div>
         </div>
 
         <div class="hidden lg:flex space-x-4 lg:mt-0">
-            <a href="#Beranda" class="whitespace-nowrap text-sm rounded-lg text-primary hover:bg-primary/10 px-3 py-2 transition-all">Beranda</a>
-            <a href="#FiturAndalan" class="whitespace-nowrap text-sm rounded-lg text-primary hover:bg-primary/10 px-3 py-2 transition-all">Fitur Andalan</a>
-            <a href="#CaraKerja" class="whitespace-nowrap text-sm rounded-lg text-primary hover:bg-primary/10 px-3 py-2 transition-all">Cara Kerja</a>
-            <a href="#YangSeringDitanyain" class="whitespace-nowrap text-sm rounded-lg text-primary hover:bg-primary/10 px-3 py-2 transition-all">Yang Sering Ditanyain</a>
-            <a href="#TimKami" class="whitespace-nowrap text-sm rounded-lg text-primary hover:bg-primary/10 px-3 py-2 transition-all">Tim Kami</a>
+            <a href="#Beranda"
+                class="whitespace-nowrap text-sm rounded-lg text-primary hover:bg-primary/10 px-3 py-2 transition-all">Beranda</a>
+            <a href="#FiturAndalan"
+                class="whitespace-nowrap text-sm rounded-lg text-primary hover:bg-primary/10 px-3 py-2 transition-all">Fitur
+                Andalan</a>
+            <a href="#CaraKerja"
+                class="whitespace-nowrap text-sm rounded-lg text-primary hover:bg-primary/10 px-3 py-2 transition-all">Cara
+                Kerja</a>
+            <a href="#YangSeringDitanyain"
+                class="whitespace-nowrap text-sm rounded-lg text-primary hover:bg-primary/10 px-3 py-2 transition-all">Yang
+                Sering Ditanyain</a>
+            <a href="#TimKami"
+                class="whitespace-nowrap text-sm rounded-lg text-primary hover:bg-primary/10 px-3 py-2 transition-all">Tim
+                Kami</a>
         </div>
 
-        <div x-show="open" 
-             x-transition:enter="transition ease-out duration-200"
-             x-transition:enter-start="opacity-0 transform -translate-y-2"
-             x-transition:enter-end="opacity-100 transform translate-y-0"
-             x-transition:leave="transition ease-in duration-150"
-             x-transition:leave-start="opacity-100 transform translate-y-0"
-             x-transition:leave-end="opacity-0 transform -translate-y-2"
-             class="lg:hidden w-full flex flex-col items-center mt-4 space-y-2 pb-4"
-             style="display: none;" >
-            <a href="#Beranda" @click="open = false" class="text-sm text-primary hover:bg-primary/10 w-full text-center py-2 rounded-xl">Beranda</a>
-            <a href="#FiturAndalan" @click="open = false" class="text-sm text-primary hover:bg-primary/10 w-full text-center py-2 rounded-xl">Fitur Andalan</a>
-            <a href="#CaraKerja" @click="open = false" class="text-sm text-primary hover:bg-primary/10 w-full text-center py-2 rounded-xl">Cara Kerja</a>
-            <a href="#YangSeringDitanyain" @click="open = false" class="text-sm text-primary hover:bg-primary/10 w-full text-center py-2 rounded-xl">Yang Sering Ditanyain</a>
-            <a href="#TimKami" @click="open = false" class="text-sm text-primary hover:bg-primary/10 w-full text-center py-2 rounded-xl">Tim Kami</a>
+        <div x-show="open" x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 transform -translate-y-2"
+            x-transition:enter-end="opacity-100 transform translate-y-0"
+            x-transition:leave="transition ease-in duration-150"
+            x-transition:leave-start="opacity-100 transform translate-y-0"
+            x-transition:leave-end="opacity-0 transform -translate-y-2"
+            class="lg:hidden w-full flex flex-col items-center mt-4 space-y-2 pb-4" style="display: none;">
+            <a href="#Beranda" @click="open = false"
+                class="text-sm text-primary hover:bg-primary/10 w-full text-center py-3 rounded-xl">Beranda</a>
+            <a href="#FiturAndalan" @click="open = false"
+                class="text-sm text-primary hover:bg-primary/10 w-full text-center py-3 rounded-xl">Fitur Andalan</a>
+            <a href="#CaraKerja" @click="open = false"
+                class="text-sm text-primary hover:bg-primary/10 w-full text-center py-3 rounded-xl">Cara Kerja</a>
+            <a href="#YangSeringDitanyain" @click="open = false"
+                class="text-sm text-primary hover:bg-primary/10 w-full text-center py-3 rounded-xl">Yang Sering
+                Ditanyain</a>
+            <a href="#TimKami" @click="open = false"
+                class="text-sm text-primary hover:bg-primary/10 w-full text-center py-3 rounded-xl">Tim Kami</a>
         </div>
     </nav>
 </div>

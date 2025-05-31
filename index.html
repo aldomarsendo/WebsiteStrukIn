@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,16 +35,17 @@
 	</div>
 
 	<!-- Ilustrasi -->
-	<div class="absolute w-48 h-48 -top-8 -right-8">
+	<div
+		class="absolute w-24 h-24 top-0 -right-4 sm:w-32 sm:h-32 sm:top-2 sm:-right-6 md:w-48 md:h-48 md:-top-8 md:-right-8">
 		<img src="assets/icon/sun.svg" alt="" class="w-full h-full object-contain">
 	</div>
 
 	<!-- Section Beranda -->
 	<section id="Beranda"
-		class="flex flex-col md:flex-row min-h-screen items-center justify-center md:items-start md:justify-start px-4 sm:px-8 md:px-24 pt-20 md:pt-40 relative overflow-hidden">
+		class="flex flex-col md:flex-row min-h-screen items-center justify-center md:items-start md:justify-start px-4 sm:px-8 md:px-24 pt-20 md:pt-32 relative overflow-hidden">
 		<div class="w-full md:w-1/2 text-center md:text-left mb-10 md:mb-0">
 			<h1 data-aos="fade-right" data-aos-once="true"
-				class="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight">
+				class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
 				<span class="text-primary">Struk</span><span class="text-main">.in</span>
 			</h1>
 			<h1 data-aos="fade-right" data-aos-once="true"
@@ -67,12 +67,12 @@
 				</a>
 			</div>
 			<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true"
-				class="absolute bottom-4 left-4 md:bottom-20 md:left-22 floating-4 hidden sm:block">
+				class="absolute bottom-4 left-4 md:bottom-20 md:left-24 floating-4 hidden sm:block">
 				<img class="bg-opacity-30 rounded-lg h-16 sm:h-20" src="assets/image/cardaldo.svg" alt="Aldo Card">
 			</div>
 		</div>
 		<div class="w-full md:w-1/2 relative overflow-hidden z-0 flex justify-center items-center">
-			<img data-aos="fade-up" data-aos-once="true" class="w-4/5 sm:w-3/5 md:w-3/5 max-h-full object-contain"
+			<img data-aos="fade-up" data-aos-once="true" class="w-4/5 sm:w-3/5 md:w-11/12 max-h-full object-contain"
 				src="assets/image/mockup-1.svg" alt="App Mockup" />
 			<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true"
 				class="absolute top-4 right-4 md:top-28 md:right-20 floating-4 hidden sm:block">
@@ -89,17 +89,19 @@
 	</section>
 
 	<!-- Ilustrasi -->
-	<div class="absolute w-48 h-48 -bottom-36 left-18 z-20">
+	<div
+		class="absolute w-24 h-24 -bottom-20 left-4 sm:w-32 sm:h-32 sm:-bottom-24 sm:left-8 md:w-40 md:h-40 md:-bottom-32 md:left-12 lg:w-48 lg:h-48 lg:-bottom-36 lg:left-18 z-20">
 		<img src="assets/icon/coin.svg" alt="" class="w-full h-full object-contain">
 	</div>
 
 	<!-- Section Fitur Andalan -->
 	<section id="FiturAndalan"
-		class="flex flex-col h-screen px-24 pt-24 items-center justify-start bg-secondary relative">
+		class="flex flex-col min-h-screen px-4 sm:px-8 md:px-16 lg:px-24 pt-16 sm:pt-20 md:pt-24 items-center justify-start bg-secondary relative">
 		<!-- Judul -->
-		<h1 class="text-4xl font-semibold text-primary leading-tight pb-2">Fitur Andalan Struk.in</h1>
+		<h1 class="text-3xl sm:text-4xl font-semibold text-primary leading-tight pb-2">Fitur Andalan Struk.in</h1>
 		<!-- Deskripsi -->
-		<p class="text-base text-center text-secondary leading-normal">Aplikasi yang memudahkan kamu mengelola struk
+		<p class="text-sm sm:text-base text-center text-secondary leading-normal">Aplikasi yang memudahkan kamu
+			mengelola struk
 			belanja<br>dan membagi tagihan dengan teman.</p>
 		<!-- Fitur -->
 		<div x-data="{ featuresCard: '' }" x-init="
@@ -114,59 +116,63 @@
 	</section>
 
 	<!-- Section Cara Kerja -->
-	<section id="CaraKerja" class="flex flex-col h-screen px-24 pt-24 items-center justify-start bg-primary relative">
+	<section id="CaraKerja"
+		class="flex flex-col min-h-screen px-4 sm:px-8 md:px-16 lg:px-24 pt-16 sm:pt-20 md:pt-24 items-center justify-start bg-primary relative">
 		<!-- Background Putih Melengkung untuk transisi ke section selanjutnya -->
 		<div class="absolute top-0 left-0 w-full z-10 transform rotate-180">
-			<svg class="h-40 w-full" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-				preserveAspectRatio="none">
+			<svg class="h-20 sm:h-28 md:h-32 lg:h-40 w-full" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 1200 120" preserveAspectRatio="none">
 				<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
 					fill="#FDFDFD"></path>
 			</svg>
 		</div>
 		<!-- Ilustrasi -->
-		<div class="absolute w-48 h-48 top-20 left-24">
+		<div
+			class="absolute w-24 h-24 top-8 left-4 sm:w-32 sm:h-32 sm:top-12 sm:left-8 md:w-40 md:h-40 md:top-16 md:left-12 lg:w-48 lg:h-48 lg:top-20 lg:left-16">
 			<img src="assets/icon/megaphone.svg" alt="megaphone" class="w-full h-full object-contain">
 		</div>
 
 		<!-- Judul -->
-		<h1 class="text-4xl font-semibold text-primary leading-tight pb-2">Bagaimana Struk.in Bekerja</h1>
+		<h1 class="text-3xl sm:text-4xl font-semibold text-primary leading-tight pb-2">Bagaimana Struk.in Bekerja</h1>
 		<!-- Deskripsi -->
-		<p class="text-base text-center text-secondary leading-normal">Tiga langkah mudah untuk mengelola struk<br>dan
+		<p class="text-sm sm:text-base text-center text-secondary leading-normal">Tiga langkah mudah untuk mengelola
+			struk<br>dan
 			membagi tagihan dengan teman.</p>
 		<!-- Nata -->
-		<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true" class="absolute top-36 -right-8 floating-4">
+		<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true"
+			class="absolute top-36 -right-8 floating-4 hidden lg:block">
 			<img class="bg-opacity-30 rounded-lg h-20 sm:h-16" src="assets/image/cardnata.svg" alt="Card redian">
 		</div>
 		<!-- Cara Kerja -->
-		<div class="flex flex-row py-24 gap-x-8">
+		<div class="flex flex-col md:flex-row py-12 md:py-16 lg:py-20 gap-8 md:gap-x-8">
 			<!-- Card 1 -->
-			<div class="flex flex-col w-1/3 items-center text-center">
+			<div class="flex flex-col w-full md:w-1/3 items-center text-center">
 				<!-- Ilustrasi -->
 				<img data-aos="fade-up" data-aos-once="true" class="pb-6" src="assets/image/illustration-1.svg" />
 				<!-- Judul -->
-				<h1 class="text-xl font-semibold text-primary leading-tight pb-2">Scan Struk</h1>
+				<h1 class="text-lg sm:text-xl font-semibold text-primary leading-tight pb-2">Scan Struk</h1>
 				<!-- Deskripsi -->
 				<p class="text-sm text-secondary leading-normal">Ambil foto struk belanja Anda<br>dengan kamera
 					smartphone.
 				</p>
 			</div>
 			<!-- Card 2 -->
-			<div class="flex flex-col w-1/3 items-center text-center">
+			<div class="flex flex-col w-full md:w-1/3 items-center text-center">
 				<!-- Ilustrasi -->
 				<img data-aos="fade-up" data-aos-once="true" class="pb-6" src="assets/image/illustration-2.svg" />
 				<!-- Judul -->
-				<h1 class="text-xl font-semibold text-primary leading-tight pb-2">Sesuaikan Pembagian</h1>
+				<h1 class="text-lg sm:text-xl font-semibold text-primary leading-tight pb-2">Sesuaikan Pembagian</h1>
 				<!-- Deskripsi -->
 				<p class="text-sm text-secondary leading-normal">Pilih item mana yang ingin Anda bagikan dan dengan
 					siapa.
 				</p>
 			</div>
 			<!-- Card 3 -->
-			<div class="flex flex-col w-1/3 items-center text-center">
+			<div class="flex flex-col w-full md:w-1/3 items-center text-center">
 				<!-- Ilustrasi -->
 				<img data-aos="fade-up" data-aos-once="true" class="pb-6" src="assets/image/illustration-3.svg" />
 				<!-- Judul -->
-				<h1 class="text-xl font-semibold text-primary leading-tight pb-2">Split & Bayar</h1>
+				<h1 class="text-lg sm:text-xl font-semibold text-primary leading-tight pb-2">Split & Bayar</h1>
 				<!-- Deskripsi -->
 				<p class="text-sm text-secondary leading-normal">Bagi tagihan secara otomatis dan<br>selesaikan
 					pembayaran
@@ -178,31 +184,35 @@
 
 	<!-- Section Yang Sering Ditanyain -->
 	<section id="YangSeringDitanyain"
-		class="flex flex-col h-screen px-24 pt-24 items-center justify-start bg-primary relative">
+		class="flex flex-col min-h-screen px-4 sm:px-8 md:px-16 lg:px-24 pt-16 sm:pt-20 md:pt-24 items-center justify-start bg-primary relative">
 		<!-- Judul -->
-		<h1 class="text-4xl font-semibold text-primary leading-tight pb-2">Yang Sering Ditanyain</h1>
+		<h1 class="text-3xl sm:text-4xl font-semibold text-primary leading-tight pb-2">Yang Sering Ditanyain</h1>
 		<!-- Fikri -->
-		<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true" class="absolute top-24 -right-5 floating-4">
+		<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true"
+			class="absolute top-24 -right-5 floating-4 hidden lg:block">
 			<img class="bg-opacity-30 rounded-lg w-auto h-24" src="assets/image/cardfikri.svg" alt="Card fikri">
 		</div>
 		<!-- Alfian -->
-		<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true" class="absolute top-24 left-5 floating-4">
-			<img class="bg-opacity-30 rounded-lg w-auto h-36" src="assets/image/cardalfian.svg" alt="Card alfian">
+		<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true"
+			class="absolute w-auto h-20 top-16 left-2 sm:h-24 md:h-28 md:top-20 md:left-3 lg:h-36 lg:top-24 lg:left-5 floating-4 hidden sm:block">
+			<img class="bg-opacity-30 rounded-lg w-full h-full" src="assets/image/cardalfian.svg" alt="Card alfian">
 		</div>
 		<!-- Redian -->
 		<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true"
-			class="absolute bottom-20 -right-5 floating-4">
+			class="absolute bottom-20 -right-5 floating-4 hidden lg:block">
 			<img class="bg-opacity-30 rounded-lg h-36" src="assets/image/cardredian.svg" alt="Card redian">
 		</div>
 		<!-- Ilustrasi -->
-		<div class="absolute w-40 h-40 bottom-20 left-10">
+		<div
+			class="absolute w-20 h-20 bottom-8 left-2 sm:w-24 sm:h-24 md:w-32 md:h-32 md:bottom-12 md:left-4 lg:w-40 lg:h-40 lg:bottom-20 lg:left-10">
 			<img src="assets/icon/comment.svg" alt="comment" class="w-full h-full object-contain">
 		</div>
 		<!-- Deskripsi -->
-		<p class="text-base text-center text-secondary leading-normal pb-12">FAQ ini siap menjawab segala rasa
+		<p class="text-sm sm:text-base text-center text-secondary leading-normal pb-8 sm:pb-10 md:pb-12">FAQ ini siap
+			menjawab segala rasa
 			penasaranmu tentang fitur<br>dan cara pakai aplikasi Struk.in.</p>
 		<!-- FAQ -->
-		<div class="w-2/3" x-data="{ faq: '' }" x-init="
+		<div class="w-full sm:w-11/12 md:w-5/6 lg:w-3/4 xl:w-2/3" x-data="{ faq: '' }" x-init="
 		fetch('components/faq.html')
 		.then(res => res.text())
 		.then(html => { 
@@ -215,15 +225,17 @@
 
 	<!-- Section Tim Kami -->
 	<section id="TimKami"
-		class="relative flex flex-col min-h-screen px-24 pt-24 items-center justify-start bg-secondary">
-		<div class="absolute w-48 h-48 bottom-28 left-10">
+		class="relative flex flex-col min-h-screen px-4 sm:px-8 md:px-16 lg:px-24 pt-16 sm:pt-20 md:pt-24 items-center justify-start bg-secondary">
+		<div
+			class="absolute w-24 h-24 bottom-10 left-2 sm:w-32 sm:h-32 sm:bottom-12 sm:left-4 md:w-40 md:h-40 md:bottom-20 md:left-6 lg:w-48 lg:h-48 lg:bottom-28 lg:left-10 hidden md:block">
 			<img src="assets/icon/stick.svg" alt="stick icon" class="w-full h-full object-contain">
 		</div>
-		<div class="absolute w-64 h-64 bottom-12 right-0">
+		<div
+			class="absolute w-32 h-32 bottom-6 -right-4 sm:w-40 sm:h-40 sm:bottom-8 sm:-right-2 md:w-48 md:h-48 md:bottom-10 md:right-0 lg:w-64 lg:h-64 lg:bottom-12 lg:right-0 hidden md:block">
 			<img src="assets/icon/headphone.svg" alt="headphone" class="w-full h-full object-contain">
 		</div>
 		<!-- Judul -->
-		<h1 class="text-4xl font-semibold text-primary leading-tight pb-2">Tim Kami</h1>
+		<h1 class="text-3xl sm:text-4xl font-semibold text-primary leading-tight pb-2">Tim Kami</h1>
 
 		<!-- Komponen Team -->
 		<div class="w-full" x-data="{ team: '' }" x-init="
@@ -236,8 +248,8 @@
 
 	<!-- Footer -->
 	<footer class="bg-footer">
-		<div class="max-w-lg mx-auto">
-			<div class="text-base text-center text-primary">
+		<div class="max-w-lg mx-auto px-4">
+			<div class="text-sm sm:text-base text-center text-primary">
 				<div class="py-3 tracking-wide">
 					<p>Copyright © Struk.In 2025. Powered All Rights Reserved.</p>
 				</div>
@@ -251,5 +263,4 @@
 		AOS.init();
 	</script>
 </body>
-
 </html>

@@ -7,7 +7,8 @@
 	<!-- Icon -->
 	<link rel="icon" href="assets/icon/icon.svg" type="image/svg+xml">
 	<!-- Tailwind -->
-	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+	 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 	<!-- Alpine -->
 	<script type="module" src="https://unpkg.com/alpinejs@3/dist/cdn.min.js"></script>
 	<!-- AOS -->
@@ -37,7 +38,7 @@
 			console.log('Navbar fetched:', html); 
 			navbar = html
 		})">
-		<div x-html="navbar"  class="w-[80%] mx-auto"></div>
+		<div x-html="navbar"></div>
 	</div>
 
 	<!-- Illustration -->
@@ -48,7 +49,7 @@
 
 	<!-- Section Beranda -->
 	<section id="Beranda"
-		class="flex flex-col pb-6 md:flex-row min-h-screen items-center justify-center px-4 sm:px-8 md:px-24 pt-20 md:pt-28 relative overflow-hidden">
+		class="flex h-[900px] flex-col pb-6 md:flex-row items-center justify-center px-4 sm:px-8 md:px-24 pt-20 md:pt-28 relative overflow-hidden">
 		<!-- class="flex flex-col md:flex-row min-h-screen items-center justify-center md:items-start md:justify-start px-4 sm:px-8 md:px-24 pt-20 md:pt-32 relative overflow-hidden"> -->
 		<!-- Left Col -->
 		<div class="w-full md:w-1/2 text-center md:text-left mb-10 md:mb-0">
@@ -80,19 +81,19 @@
 				</a>
 			</div>
 			<!-- Aldo -->
-			<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true"
-				class="absolute bottom-32 left-4 sm:bottom-[180px] md:bottom-[160px] md:left-24 z-30 floating-4">
-				<img class="bg-opacity-30 rounded-lg h-16 " src="assets/image/cardaldo.svg" alt="Aldo Card">
+			<div data-aos="fade-up" data-aos-once="true"
+				class="absolute bottom-32 left-4 sm:bottom-[200px] md:bottom-[100px] md:left-24 z-30 floating-4">
+				<img class="bg-opacity-30 rounded-lg h-16 sm:h-20" src="assets/image/cardaldo.svg" alt="Aldo Card">
 			</div>
 		</div>
 		<!-- Right Col -->
 		<div class="w-full md:w-1/2 overflow-hidden z-0 flex justify-center items-center">
-			<img data-aos="fade-up" data-aos-once="true" class="hidden xl:block xl:w-1/4 object-contain absolute transform -translate-y-1/2 top-32"
+			<img data-aos="fade-up" data-aos-once="true" class="hidden xl:block xl:w-1/4 object-contain absolute transform top-32"
 				src="assets/image/mockup-1.svg" alt="Mockup Aplikasi Struk.in" />
 			<!-- Bila -->
 			<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true"
-				class="absolute z-30 top-44 right-6 sm:top-4 sm:right-4 md:top-44 md:right-20 floating-4">
-				<img class="bg-opacity-30 rounded-lg h-16 sm:h-20" src="assets/image/cardbila.svg" alt="Bila Card">
+				class="absolute z-30 top-32 right-4 sm:top-6 sm:right-6 md:top-32 md:right-20 floating-4">
+				<img class=" rounded-lg h-16 sm:h-20" src="assets/image/cardbila.svg" alt="Bila Card">
 			</div>
 		</div>
 		<!-- Background Putih Melengkung untuk transisi ke section selanjutnya -->
@@ -201,7 +202,7 @@
 
 	<!-- Section Yang Sering Ditanyain -->
 	<section id="YangSeringDitanyain"
-		class="flex flex-col min-h-screen px-8 md:px-16 lg:px-24 pt-24 sm:pt-20 md:pt-24 items-center justify-start bg-primary relative">
+		class="flex flex-col h-[900px] px-8 md:px-16 lg:px-24 pt-24 sm:pt-20 md:pt-24 items-center justify-start bg-primary relative ">
 		<!-- Judul -->
 		<h1 class="text-2xl sm:text-4xl font-semibold text-primary leading-tight pb-2">Yang Sering Ditanyain</h1>
 		<!-- Fikri -->
@@ -216,7 +217,7 @@
 		</div>
 		<!-- Redian -->
 		<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true"
-			class="absolute bottom-20 right-0 translate-x-2 floating-4">
+			class="absolute bottom-8 sm:bottom-8 md:bottom-16 right-0 translate-x-2 floating-4 z-20">
 			<img class="bg-opacity-30 rounded-lg h-36" src="assets/image/cardredian.svg" alt="Card redian">
 		</div>
 		<!-- Illustration -->
